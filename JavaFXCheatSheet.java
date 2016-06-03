@@ -21,8 +21,8 @@ public class JavaFXCheatSheet extends Application{
     /*
       Denne koden får man oppgitt i eksamen:
     */
-    final Image unpopped = new Image(JavaFXCheatSheet.class.getResourceAsStream("unpopped.jpg"));
-    final Image popped = new Image(JavaFXCheatSheet.class.getResourceAsStream("popped.jpg"));
+    final Image unpopped = new Image("unpopped.jpg");
+    final Image popped = new Image("popped.jpg");
 
     /*
       Bestemmer griden/brettet:
