@@ -35,7 +35,26 @@ public class JavaFXCheatSheet extends Application{
         final ImageView imv = new ImageView();
         imv.setImage(unpopped);
 
+        /*
         imv.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+          if(imv.getImage() == unpopped){
+            imv.setImage(popped);
+          }
+        });
+        */
+        /*
+        evt:
+        *//*
+        imv.setOnMouseClicked(new EventHandler<MouseEvent>(){
+          @Override
+          public void handle(MouseEvent event){
+            if(imv.getImage() == unpopped){
+              imv.setImage(popped);
+            }
+          }
+        });
+        */
+        imv.setOnMouseClicked(event -> {
           if(imv.getImage() == unpopped){
             imv.setImage(popped);
           }
